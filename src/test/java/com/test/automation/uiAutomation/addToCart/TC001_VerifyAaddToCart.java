@@ -23,7 +23,8 @@ public class TC001_VerifyAaddToCart extends TestBase{
 	@Test
 	public void verifyAaddToCart() {
 		try {
-			log.info("=======Starting verifyAaddToCart test Case========");
+
+			log.info("=======Starting verifyAddToCart test========");
 			homepage = new  HomePage(driver);
 			homepage.switchToFrame();
 			homepage.clickOnNavigationMenu(homepage.mens);
@@ -31,7 +32,9 @@ public class TC001_VerifyAaddToCart extends TestBase{
 			productDetailsPage = new ProductDetailsPage(driver);
 			productDetailsPage.selectProduct(productDetailsPage.contrast_jacket);
 			homepage.switchToDefaultContent();
-			log.info("=======Finished verifyAaddToCart test Case========");
+
+			log.info("=======Finished verifyaddToCart test========");
+
 			getScreenShot("verifyAaddToCart");
 		} catch (Exception e) {
            getScreenShot("verifyAaddToCart");
